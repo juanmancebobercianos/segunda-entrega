@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -87,6 +88,10 @@ body {
 
 form {
     margin-top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 label {
@@ -246,7 +251,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: aliceblue;
+    background-color: rgb(20, 148, 26);
     border-radius: 5px;
     box-shadow: 0px 4px 10px;
 }
@@ -264,6 +269,7 @@ p {
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
+    color: black;
 }
 
 .itemPrecio {
@@ -295,7 +301,7 @@ p {
 
 .quienessomos {
     color: red;
-    text-align: center;
+    text-align: left;
     font-size: 35px;
     margin: 50px;
 }
@@ -313,6 +319,7 @@ p {
     font-size: 20px;
     font: bold;
     margin: 50px;
+    color: black;
 }
 
 .parrafo2 {
@@ -320,12 +327,14 @@ p {
     font-size: 20px;
     font: bold;
     margin: 50px;
+    color: black;
 }
 
 
 .sucursales {
     color: rgb(12, 12, 230);
     text-align: center;
+    text-decoration: underline;
     font-size: 55px;
     margin: 50px;
 }
@@ -333,14 +342,16 @@ p {
 .direccion {
     color: black;
     text-align: left;
-    margin: 100px;
+    margin: 50px;
 }
 
 .direccion2 {
     color: black;
     text-align: left;
-    margin: 100px;
+    margin: 50px;
 }
+
+
 
 .envios {
     text-align: center;
@@ -358,7 +369,7 @@ p {
 }
 
 .boletin2 {
-    color: rgb(7, 0, 14);
+    color: rgb(0, 0, 0);
     text-align: left;
     font-size: 60px;
     margin: 50px;
@@ -380,12 +391,108 @@ p {
     margin: 50px;
 }
 
+.colocar_nombre {
+    color: black;
+    font-size: 20px;
+}
+
+.colocar_email {
+    color: black;
+    font-size: 20px;
+}
+
+.colocar_telefono {
+    color: black;
+    font-size: 20px;
+}
+
+.colocar_website {
+    color: black;
+    font-size: 20px;
+}
+
+.colocar_asunto {
+    color: black;
+    font-size: 20px;
+}
+
+.obligatorio {
+    color: #97d848;
+    font-size: 20px;
+}
+
+.colocar_mensaje {
+    color: black;
+    font-size: 20px;
+}
+
+.texto_mensaje {
+    color: black;
+    font-size: 20px;
+}
+
 .nombre {
     color: black;
 }
 
+/* footer */
+
+footer {
+    clear: both
+}
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin: 50px;
+}
+
+.footer-info {
+    flex: 1;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
 
 
+.footer-social img {
+    width: 80px;
+    
+    
 /* MediaQ */
 
 @media (max-width:550px) {
