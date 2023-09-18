@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* header */
+/* estilo header */
 
 .logo {
     width: 500px;
@@ -15,7 +15,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: darkgreen;
+    background-color: rgb(125, 247, 125);
+    gap: 10px;
 }
 
 li {
@@ -39,6 +40,29 @@ a {
     border: none;
     border-radius: 75px;
 }
+
+/* Estilo para los botones */
+.navItem {
+    display: inline-block;
+    margin-right: 10px; 
+    background-color: #a1ec3e; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+
+/* Estilo para los enlaces dentro de los botones */
+.navItem a {
+    text-decoration: none;
+    color: #0a0a0a; 
+    font-weight: bold;
+}
+
+/* Estilo hover para los botones */
+.navItem:hover {
+    background-color: #479ff1;
+}
+
 
 /* Wapp */
 
@@ -97,11 +121,10 @@ body {
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 10px;
+   
     color: rgb(251, 251, 252);
 }
 
-input[type="text"],
 textarea {
     display: block;
     width: 40%;
@@ -126,8 +149,9 @@ body {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
-    background-color: #fbfbfb;
     padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fbfbfb;
 }
 
 
@@ -177,7 +201,7 @@ button {
     border-color: #ab4493;
     border-style: solid;
     border-radius: 10px;
-    width: 420px;
+    width: 85%;
     cursor: pointer;
 }
 
@@ -234,27 +258,28 @@ p {
 
 .formulario textarea:focus {
     outline: 0;
-    border: 1px solid #97d848;
+    border: 1px solid #0d1601;
 }
 
 /* ITEMS */
 
 .contenedorItems {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 60px;
-    margin: 36px 0;
+    grid-template-columns: auto auto auto;
+    gap: 23px;
+    margin: 36px;
 }
 
 .items {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: rgb(20, 148, 26);
-    border-radius: 5px;
+    padding: 3px;
+    background-color: rgb(104, 223, 110);
+    border-radius: 20px;
     box-shadow: 0px 4px 10px;
 }
+
 
 .itemImagen {
     width: 100%;
@@ -290,6 +315,10 @@ p {
     margin: 10px;
 }
 
+.itemBtn:hover {
+    background-color: #479ff1;
+}
+
 /* Responsive */
 
 .Sobrenosotros {
@@ -297,18 +326,19 @@ p {
     text-align: center;
     font-size: 55px;
     margin: 50pxs;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .quienessomos {
     color: red;
-    text-align: left;
-    font-size: 35px;
-    margin: 50px;
+    text-align: center;
+    font-size: 40px;
+    margin: 60px;
 }
 
 .comotrabajamos {
     color: red;
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     margin: 50px;
 }
@@ -318,8 +348,44 @@ p {
     text-align: left;
     font-size: 20px;
     font: bold;
-    margin: 50px;
+    margin: 20px;
     color: black;
+}
+
+.En-Sierra-Morena {
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
+}
+
+.Sostenibilidad {
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
+}
+
+.Calidad {
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
+}
+
+.Innovación-culinaria {
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
+}
+
+.servicio-al-cliente {
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
+}
+
+.Orden-alfabetico {
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
 }
 
 .parrafo2 {
@@ -330,6 +396,30 @@ p {
     color: black;
 }
 
+.orden-alfabetico {
+    text-align: left;
+    font-size: 20px;
+    font: bold;
+    margin: 50px;
+    color: rgb(231, 6, 6);
+}
+
+.metodologia {
+    text-align: left;
+    font-size: 20px;
+    font: bold;
+    margin: 05px;
+    color: rgb(0, 0, 0);
+}
+
+.finparrafo {
+    text-align: center;
+    font-size: 20px;
+    font: bold;
+    margin: 05px;
+    color: rgb(199, 0, 0);
+}
+
 
 .sucursales {
     color: rgb(12, 12, 230);
@@ -337,18 +427,27 @@ p {
     text-decoration: underline;
     font-size: 55px;
     margin: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mapaA {
+    display: flex;
+}
+
+.mapaB {
+    display: flex;
 }
 
 .direccion {
     color: black;
     text-align: left;
-    margin: 50px;
+    margin: 15px;
 }
 
 .direccion2 {
     color: black;
     text-align: left;
-    margin: 50px;
+    margin: 15px;
 }
 
 
@@ -366,6 +465,7 @@ p {
     text-align: center;
     font-size: 55px;
     margin: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .boletin2 {
@@ -374,6 +474,7 @@ p {
     font-size: 60px;
     margin: 50px;
     font-style: oblique;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .boletin3 {
@@ -381,6 +482,7 @@ p {
     font-size: 20px;
     font: bold;
     margin: 50px;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -389,6 +491,7 @@ p {
     text-align: center;
     font-size: 55px;
     margin: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .colocar_nombre {
@@ -435,67 +538,70 @@ p {
     color: black;
 }
 
-/* footer */
+/*Footer*/
 
+/* Estilos para el footer */
 footer {
-    clear: both
-}
-
-footer {
-    background-color: #252525;
+    display: flex;
+    background-color: #4d4b4b;
     color: #fff;
-    padding: 30px 0;
+    padding: 25px 0;
 }
 
-.footer-container {
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: left;
+}
+
+.logo-footer img {
+    width: 100px;
+    align-items: left;
+}
+
+.informacion-footer h4, .redes-sociales h4 {
+    font-size: 18px;
+}
+
+.informacion-footer p {
+    margin: 10px 0;
     align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
-.footer-logo img {
-    width: 150px;
-    margin: 50px;
-}
-
-.footer-info {
-    flex: 1;
-}
-
-.footer-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.footer-info p {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-.footer-social {
-    text-align: right;
-}
-
-.footer-social h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.footer-social a {
+.redes-sociales a {
+    text-decoration: none;
+    color: #fff;
     margin-right: 10px;
 }
 
+/* Estilos para las imágenes de las redes sociales */
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
 
-.footer-social img {
-    width: 80px;
-    
     
 /* MediaQ */
+@media (max-width:768px) {
+    .logo {
+        width: 35%;
+    }
 
-@media (max-width:550px) {
+    header {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .contenedorItems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .Sobrenosotros {
         color: fuchsia;
     }
@@ -517,11 +623,55 @@ footer {
     }
 }
 
+@media (max-width:550px) {
+    .contenedorItems {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Sobrenosotros {
+        color: fuchsia;
+    }
+
+    .parrafo {
+        color: rgb(0, 68, 255);
+    }
+
+    .sucursales {
+        color: firebrick;
+    }
+
+    .boletin {
+        color: rgb(226, 43, 43);
+    }
+
+    .contacto {
+        color: rgb(138, 51, 196);
+    }
+}
+
+
 @media screen and (orientation: landscape) {
     .Sobrenosotros {
         text-transform: uppercase;
     }
+    .banner {
+        text-transform: uppercase;
+    }
+
+    .sucursales {
+        text-transform: uppercase;
+    }
+
+    .Boletindenoticias {
+        text-transform: uppercase;
+    }
+
+    .contacto {
+        text-transform: uppercase;
+    }
 }
+
+
 
 /* MobileFirst */
 
@@ -530,19 +680,18 @@ body {
 }
 
 header {
-    background-color: darkgreen;
+    background-color: rgb(253, 253, 253);
     grid-area: header;
 }
 
 nav {
-    background-color: darkgreen;
+    background-color: rgb(255, 255, 255);
     grid-area: nav;
 }
 
 main {
     background-color: rgb(81, 236, 177);
     grid-area: main;
-    height: 300px;
 }
 
 .primerSeccion {
@@ -558,44 +707,8 @@ main {
 }
 
 aside {
-    background-color: darkolivegreen;
+    background-color: rgb(162, 255, 0);
     grid-area: publi;
 }
 
-footer {
-    background-color: rgb(81, 236, 177);
-    grid-area: footer;
-    height: 200px;
-}
-
-/* Vers tableta */
-
-@media (min-width: 768px) {
-    .gridPadre {
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "nav seccionA"
-            "nav seccionA"
-            "nav seccionB"
-            "publi main"
-            "publi main"
-            "footer footer";
-    }
-}
-
-/* VersEscritorio */
-
-@media (min-width: 1024px) {
-    .gridPadre {
-        grid-template-areas:
-            "header header header"
-            "nav nav main"
-            "nav nav main"
-            "publi seccionA seccionB"
-            "publi seccionA seccionB"
-            "footer footer footer";
-
-    }
-}
 
