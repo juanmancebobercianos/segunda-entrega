@@ -1,0 +1,134 @@
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fbfbfb;
+}
+
+input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    float: left;
+}
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #ab4493;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 85%;
+    cursor: pointer;
+
+    p {
+        color: #fff;
+    }
+}
+
+.aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+}
+
+h1 {
+    font-size: 39px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #f5f1f4;
+}
+
+h2 {
+    font-size: 25px;
+    padding-bottom: 30px;
+    color: #e61ccb;
+}
+
+p {
+    font-size: 25px;
+    color: #fcf8f8;
+}
+
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder {
+    color: #a8a8a8;
+}
+
+.formulario {
+    input:focus {
+        outline: 0;
+        border: 1px solid #97d848;
+    }
+
+    textarea:focus {
+        outline: 0;
+        border: 1px solid #0d1601;
+    }
+}
+
+.contacto {
+    color: rgb(5, 1, 0);
+    text-align: center;
+    font-size: 55px;
+    margin: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.colocar_nombre,
+.colocar_email,
+.colocar_telefono,
+.colocar_website,
+.colocar_asunto {
+    color: black;
+    font-size: 20px;
+}
+
+.obligatorio {
+    color: #97d848;
+    font-size: 20px;
+}
+
+.colocar_mensaje,
+.texto_mensaje {
+    color: black;
+    font-size: 20px;
+}
+
+.nombre {
+    color: black;
+}

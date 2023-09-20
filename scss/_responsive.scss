@@ -1,0 +1,114 @@
+/* MediaQ */
+@media (max-width: 768px) {
+    .logo {
+        width: 35%;
+    }
+
+    header {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .contenedorItems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Sobrenosotros {
+        color: fuchsia;
+    }
+
+    .parrafo {
+        color: rgb(0, 68, 255);
+    }
+
+    .sucursales {
+        color: firebrick;
+    }
+
+    .boletin {
+        color: rgb(226, 43, 43);
+    }
+
+    .contacto {
+        color: rgb(138, 51, 196);
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedorItems {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Sobrenosotros {
+        color: fuchsia;
+    }
+
+    .parrafo {
+        color: rgb(0, 68, 255);
+    }
+
+    .sucursales {
+        color: firebrick;
+    }
+
+    .boletin {
+        color: rgb(226, 43, 43);
+    }
+
+    .contacto {
+        color: rgb(138, 51, 196);
+    }
+}
+
+@media screen and (orientation: landscape) {
+
+    .Sobrenosotros,
+    .banner,
+    .sucursales,
+    .Boletindenoticias,
+    .contacto {
+        text-transform: uppercase;
+    }
+}
+
+/* MobileFirst */
+
+body {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(253, 253, 253);
+    grid-area: header;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: nav;
+}
+
+main {
+    background-color: rgb(81, 236, 177);
+    grid-area: main;
+}
+
+.primerSeccion {
+    background-color: bisque;
+    grid-area: seccionA;
+    height: 200px;
+}
+
+.segundaSeccion {
+    background-color: red;
+    grid-area: seccionB;
+    height: 200px;
+}
+
+aside {
+    background-color: rgb(162, 255, 0);
+    grid-area: publi;
+}

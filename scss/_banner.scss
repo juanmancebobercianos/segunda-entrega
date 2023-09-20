@@ -1,0 +1,29 @@
+/* Banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+
+    h1 {
+        font-size: 100px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: $color-lila;
+    color: $color-blanco;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 100px;
+}

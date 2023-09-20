@@ -1,0 +1,80 @@
+/* estilo header */
+
+.logo {
+    width: 500px;
+    cursor: pointer;
+}
+
+@mixin anclas {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(125, 247, 125);
+    gap: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a {
+    @include anclas;
+    font-size: 25px;
+    font-weight: 500;
+    
+    text-transform: uppercase;
+}
+
+.productos {
+    background-color: rgb(177, 135, 233);
+    padding: 9px 25px;
+    border: none;
+    border-radius: 75px;
+}
+
+/* Estilo para los botones */
+
+.navItem {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: $color-verde;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #0a0a0a;
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: #479ff1;
+    }
+}
+
+/* Estilo para los enlaces dentro de los botones */
+
+/* Estilo hover para los botones */
+
+/* Wapp */
+
+.logowapp {
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
